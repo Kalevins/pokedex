@@ -22,7 +22,7 @@ export function Home(): ReactElement {
   const [favorites] = useLocalStorage('favorites');
   const { loading, error, data } = useQuery<AllPokemonsQueryResponse, AllPokemonsQueryVariables>(AllPokemonsQuery(orderBy === 'name' && !!searchFilter , orderBy === 'id' && !!searchFilter, filterBy !== 0), {
     variables: {
-      limit: 151,
+      limit: isFavorites ? 151 : undefined,
       orderById: orderBy === 'id' ? 'asc' : undefined,
       orderByName: orderBy === 'name' ? 'asc' : undefined,
       id: orderBy === 'id' ? Number(searchFilter) : undefined,

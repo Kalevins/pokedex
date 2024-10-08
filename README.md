@@ -23,6 +23,8 @@ _También puedes ver el proyecto en:_
 
 * [React](https://reactjs.org/) - Librearia de JavaScript
 * [TypeScript](https://www.typescriptlang.org/) - Superset de JavaScript
+* [GraphQL](https://graphql.org/) - Lenguaje de consulta
+* [Apollo Client](https://www.apollographql.com/docs/react/) - Cliente de GraphQL
 * [Vite](https://vitejs.dev/) - Herramienta de desarrollo
 * [CSS Modules](https://developer.mozilla.org/es/docs/Web/CSS) - Lenguaje de estilos
 
