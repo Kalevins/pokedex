@@ -1,0 +1,31 @@
+input,
+select,
+textarea {
+  border: 0;
+  height: max-content;
+  box-sizing: border-box;
+  background: var(--color-white);
+  color: var(--color-medium);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--color-medium);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

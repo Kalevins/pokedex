@@ -1,0 +1,31 @@
+:root {
+  /* Identity */
+  --color-primary: #DC0A2D;
+
+  /* Types */
+  --color-type-bug: #A7B723;
+  --color-type-dark: #75574C;
+  --color-type-dragon: #7037FF;
+  --color-type-electric: #F9CF30;
+  --color-type-fairy: #E69EAC;
+  --color-type-fighting: #C12239;
+  --color-type-fire: #F57D31;
+  --color-type-flying: #A891EC;
+  --color-type-ghost: #70559B;
+  --color-type-normal: #AAA67F;
+  --color-type-grass: #74CB48;
+  --color-type-ground: #DEC16B;
+  --color-type-ice: #9AD6DF;
+  --color-type-poison: #A43E9E;
+  --color-type-psychic: #FB5584;
+  --color-type-rock: #B69E31;
+  --color-type-steel: #B7B9D0;
+  --color-type-water: #6493EB;
+
+  /* Grayscale */
+  --color-dark: #212121;
+  --color-medium: #666666;
+  --color-light: #E0E0E0;
+  --color-white: #FFFFFF;
+  --color-background: #EFEFEF;
+}

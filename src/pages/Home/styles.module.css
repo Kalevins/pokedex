@@ -1,0 +1,106 @@
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 10px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--color-primary);
+
+  .header {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    gap: 10px;
+
+    .logo {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+      color: var(--color-white);
+
+      > svg {
+        width: 35px;
+        height: 35px;
+
+        path {
+          fill: var(--color-white);
+        }
+      }
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto;
+      gap: 20px;
+      position: relative;
+
+      svg path {
+        fill: var(--color-primary);
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-white);
+        border-radius: 24px;
+        gap: 10px;
+        padding: 10px 16px;
+        box-shadow: var(--inner-shadow-2);
+        box-sizing: border-box;
+        cursor: text;
+
+        > input {
+          width: 100%;
+        }
+
+        > svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        &:active, &:focus-within {
+          box-shadow: var(--drop-shadow-2);
+        }
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-white);
+        color: var(--color-white);
+        border-radius: 50%;
+        box-shadow: var(--inner-shadow-2);
+        cursor: pointer;
+        height: 100%;
+        padding: 10px;
+        aspect-ratio: 1/1;
+
+        &:active, &#active, &:hover, &#open {
+          box-shadow: var(--drop-shadow-2);
+        }
+
+        > svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: var(--inner-shadow-6);
+    padding: 30px 20px;
+    overflow-y: auto;
+  }
+}
